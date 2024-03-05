@@ -37,7 +37,7 @@ const locations = [
   },
 ];
 function update(location) {
-  button1.innerText = "Go to store";
+  button1.innerText = location["button text"][0];
   button2.innerText = "Go to cave";
   button3.innerText = "Fight dragon";
 
@@ -49,7 +49,9 @@ function update(location) {
     'You are in the town square. You see a sign that says "Store".';
 }
 
-function goTown() {}
+function goTown() {
+  update(locations[0]);
+}
 function goStore() {}
 
 function goCave() {
