@@ -36,6 +36,13 @@ const locations = [
     text: "You enter the store.",
   },
 ];
+
+// initialize buttons
+
+button1.onclick = goStore;
+button2.onclick = goCave;
+button3.onclick = fightDragon;
+
 function update(location) {
   button1.innerText = location["button text"][0];
   button2.innerText = location["button text"][1];
@@ -66,10 +73,6 @@ function buyHealth() {}
 
 function buyWeapon() {}
 
-// initialize buttons
+function fightSlime() {}
 
-button1.onclick = goStore;
-
-button2.onclick = goCave;
-
-button3.onclick = fightDragon;
+function fightBeast() {}
